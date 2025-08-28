@@ -1,0 +1,23 @@
+commit 078859d1e26c7ceff7005cdbba45f03e06c1e83c (HEAD -> dev, origin/dev, origin/HEAD)
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 28 06:06:23 2025 -0400
+
+    getText copy and fix, constants creation, getter for list made
+
+commit d66239f38c076df719d03a5a92c2da57ae298d35
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 21 10:36:22 2025 -0400
+
+    Added the eclipse example game files
+
+commit f5bad6ada842a9cffc49d0b5255730a5bdc5e03a
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 21 10:03:30 2025 -0400
+
+    Adding Base Project Structure
+
+    1.) Creating the README file for the project
+    2.) Creating the code directory for the project
+
+commit 33951125fbe46509c42e106aeb677a5edf471ac5
+:
