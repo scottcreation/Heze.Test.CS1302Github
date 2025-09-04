@@ -1,0 +1,71 @@
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Sep 4 04:45:35 2025 -0400
+
+    Added Tests for BillItem Constructor
+
+    Created tests for bill item constructor that included testing for an empty item name and test for the boundary value 1 (ie one below 1, at 1, above 1)
+
+commit f52f5fcdec584658e452b4ea8145e64cc16b2198 (origin/dev, origin/HEAD)
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Sep 4 04:08:28 2025 -0400
+
+    Created Test Package and Test class for addItem
+
+    1. Created test package within project to create all test cases
+    2. created test for add item method within bill class
+
+commit 8b13083a83a5d7f5bafa135927344a89ba446876
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 28 06:14:19 2025 -0400
+
+    added text file of git log
+:
+commit f7ba36f973897cda137c4d453fc4e6a12b831864 (HEAD -> dev)
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Sep 4 04:45:35 2025 -0400
+
+    Added Tests for BillItem Constructor
+
+    Created tests for bill item constructor that included testing for an empty item name and test for the boundary value 1 (ie one below 1, at 1, above 1)
+
+commit f52f5fcdec584658e452b4ea8145e64cc16b2198 (origin/dev, origin/HEAD)
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Sep 4 04:08:28 2025 -0400
+
+    Created Test Package and Test class for addItem
+
+    1. Created test package within project to create all test cases
+    2. created test for add item method within bill class
+
+commit 8b13083a83a5d7f5bafa135927344a89ba446876
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 28 06:14:19 2025 -0400
+
+    added text file of git log
+
+commit 078859d1e26c7ceff7005cdbba45f03e06c1e83c
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 28 06:06:23 2025 -0400
+
+    getText copy and fix, constants creation, getter for list made
+
+commit d66239f38c076df719d03a5a92c2da57ae298d35
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 21 10:36:22 2025 -0400
+
+    Added the eclipse example game files
+
+commit f5bad6ada842a9cffc49d0b5255730a5bdc5e03a
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Thu Aug 21 10:03:30 2025 -0400
+
+    Adding Base Project Structure
+
+    1.) Creating the README file for the project
+    2.) Creating the code directory for the project
+
+commit 33951125fbe46509c42e106aeb677a5edf471ac5
+Author: Hezekiah Scott <hscott8@my.westga.edu>
+Date:   Tue Aug 19 10:05:39 2025 -0400
+
+    Initial commit

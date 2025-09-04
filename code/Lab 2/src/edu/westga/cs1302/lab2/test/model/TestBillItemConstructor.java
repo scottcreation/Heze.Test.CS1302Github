@@ -21,7 +21,7 @@ class TestBillItemConstructor {
 	@Test
 	void testOneBelowMin() {
 		assertThrows(IllegalArgumentException.class,() -> {
-			new BillItem("Prop", -1);
+			new BillItem("Prop", 0);
 		});
 	}
 	
