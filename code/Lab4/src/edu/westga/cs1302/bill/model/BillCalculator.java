@@ -81,6 +81,6 @@ public class BillCalculator {
 		double subTotal = calculateSubtotal(items);
 		
 		return subTotal + tax + tip;
-	}
+	} 
 	
 }
