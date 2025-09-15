@@ -1,7 +1,7 @@
- package edu.westga.cs1302.lab3.views;
+package edu.westga.cs1302.bill.view;
 
-import edu.westga.cs1302.lab3.model.Bill;
-import edu.westga.cs1302.lab3.model.BillItem;
+import edu.westga.cs1302.bill.model.Bill;
+import edu.westga.cs1302.bill.model.BillItem;
 
 /** Supports displaying the information contained in a Bill.
  * 
@@ -19,7 +19,7 @@ public class BillView {
 	 * 
 	 * @return a String containing the list of bill items and total for the bill
 	 */
-	public String getText(Bill bill) {
+	public static String getText(Bill bill) {
 		String text = "ITEMS" + System.lineSeparator();
 		double subTotal = 0.0;
 		for (BillItem item : bill.getItems()) {
@@ -31,14 +31,14 @@ public class BillView {
 		text += "SUBTOTAL - $" + subTotal + System.lineSeparator();
 		double tax = subTotal * Bill.TAX_RATE;
 		double tip = subTotal * Bill.TIP_RATE;
-		text += "TAX - $" + this.roundToNearestHundredth(tax) + System.lineSeparator();
-		text += "TIP - $" + this.roundToNearestHundredth(tip) + System.lineSeparator();
-		text += "TOTAL - $" + this.roundToNearestHundredth(subTotal + tip + tax);
+		text += "TAX - $" + BillView.roundToNearestHundredth(tax) + System.lineSeparator();
+		text += "TIP - $" + BillView.roundToNearestHundredth(tip) + System.lineSeparator();
+		text += "TOTAL - $" + BillView.roundToNearestHundredth(subTotal + tip + tax);
 		
 		return text;
 	}
 	
-	private double roundToNearestHundredth(double value) {
+	private static double roundToNearestHundredth(double value) {
 		return (int) (value * 100) / 100.0;
 	}
 }
