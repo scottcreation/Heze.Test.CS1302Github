@@ -42,7 +42,12 @@ public class MainWindow {
 		 this.pBox.getItems().add("HIGH");
 		 this.pBox.setValue("MEDIUM");
 		 
+		 if (this.indexField != null) {
+		        this.indexField.setOnAction(e -> this.handleRemoveTask());
+		    }
     }
+	 
+	 
 	 /**
 	 * Handles clicking of Add Task button
 	 * 
@@ -77,7 +82,47 @@ public class MainWindow {
 			 alert.showAndWait();
 		 }		 
 	 }
+	 /**
+	 * Allows for removal of task at the typed index
+	 * 
+	 * @precondition indexField available and index to be removed is selected
+	 * @precondition the task at the given index is removed; description and priority displayed are cleared
+	 * @throws NumberFormatException
+	 */
 	 
+	 @FXML
+	 public void handleRemoveTask() {
+	     try {
+	         String idxText = this.indexField.getText();
+	         if (idxText == null || idxText.isBlank()) {
+	        	 Alert alert = new Alert(Alert.AlertType.ERROR);
+				 alert.setTitle("Error");
+				 alert.setHeaderText("No Index");
+				 alert.setContentText("Enter a task index (starting at 0).");
+				 alert.showAndWait();
+	             return;
+	         }
+	         int idx = Integer.parseInt(idxText.trim());
+	         int size = this.taskList.getItems().size();
+	         if (idx < 0 || idx >= size) {
+	        	 Alert alert = new Alert(Alert.AlertType.ERROR);
+				 alert.setTitle("Error");
+				 alert.setHeaderText("Out of Range");
+				 alert.setContentText("Index must be between 0 and " + (size - 1) + ".");
+				 alert.showAndWait();
+	             return;
+	         }
+	         this.taskList.getItems().remove(idx);
+	         this.displayDesc.clear();
+	         this.displayPrior.clear();
+	     } catch (NumberFormatException numberError) {
+	    	 Alert alert = new Alert(Alert.AlertType.ERROR);
+			 alert.setTitle("Error");
+			 alert.setHeaderText("Invalid Index");
+			 alert.setContentText("Index must be a valid number");
+			 alert.showAndWait(); 
+	     }
+	 }
 	 /**
 	  * Displays details of selected task
 	  * 
@@ -85,6 +130,7 @@ public class MainWindow {
 	  * @postcondition displayDesc and displayPrior show chosen task or thrown error
 	  * @Throws numberFormatException
 	  */
+	 
 	 @FXML
 	 public void displaySelectedTask() {
 		 try {
