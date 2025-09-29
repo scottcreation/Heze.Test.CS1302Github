@@ -1,7 +1,7 @@
- package edu.westga.cs1302.lab3.views;
+ package edu.westga.cs1302.Project1.views;
 
-import edu.westga.cs1302.lab3.model.Bill;
-import edu.westga.cs1302.lab3.model.BillItem;
+import edu.westga.cs1302.Project1.model.Bill;
+import edu.westga.cs1302.Project1.model.BillItem;
 
 /** Supports displaying the information contained in a Bill.
  * 

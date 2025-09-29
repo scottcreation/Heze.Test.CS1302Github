@@ -1,4 +1,4 @@
-package edu.westga.cs1302.lab3;
+package edu.westga.cs1302.Project1;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

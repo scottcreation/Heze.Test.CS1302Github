@@ -1,0 +1,19 @@
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Mon Sep 15 07:57:19 2025 -0400
+
+    Updated getText method to use newly created methods
+
+    1. updated getText to allow Arrays instead of ArrayList as I kept getting an error due to the difference so had to convert
+    2. changed the code of getText to call on the methods from BillCalculator to print the text
+
+commit f28e5ab412d9a12ed8f0bbfefdc653d6680a4153 (origin/dev, origin/HEAD)
+Author: Hezekiah Scott <hscott09062003@gmail.com>
+Date:   Mon Sep 15 07:21:38 2025 -0400
+
+    Made BillItem Fields static and Completed BillCalculator class
+
+    1. BillItem variables have been changed to final as required within lab instructions so that whatever is given for these cannot be changed
+    2. BillCalculator class has been created with the Tax rate and tip rate instantiated as final variables that cannot be changed during compilation
+    3. A method to calculate the subtotal was made within the class
+    4. A method to calculate the total was made within the class
+:

@@ -1,5 +1,4 @@
-package edu.westga.cs1302.lab3.views;
-
+package edu.westga.cs1302.Project1.views;
 
 /**
  * Controller class for drawing various things to our canvas window.
@@ -7,6 +6,7 @@ package edu.westga.cs1302.lab3.views;
  * @author CS 1302
  * @version Fall 2025
  */
+
 public class MainWindow {
     
     /**

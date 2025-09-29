@@ -1,4 +1,4 @@
-package edu.westga.cs1302.lab3.model;
+package edu.westga.cs1302.Project1.model;
 
 import java.util.ArrayList;
 
